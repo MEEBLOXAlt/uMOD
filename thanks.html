@@ -8,7 +8,21 @@
 <body>
   <p> Hi, thank you for adding my discord bot! <p>
   <p> It really took time with all the errors, but know I've got it! <p>
-    <img src="/Domu.png" alt="Bot Profile picture"></img>
+    <img src="/Domu.png" alt="Bot Profile picture"></img><br><br>
+  You will be auto-redirected in <div id="yes"></div><br>
+  If you weren't auto-redirected, click <a href="https://discord.com/api/oauth2/authorize?client_id=833408884336099339&permissions=8&scope=bot%20applications.commands">here</a>.  <script>
+    let i = 0;
+    function csu() {
+      if (i >= 5) {
+        window.location.href = "https://discord.com/api/oauth2/authorize?client_id=833408884336099339&permissions=8&scope=bot%20applications.commands";
+      } else {
+        let i = i + 1;
+        document.getElementById("yes").innerText = i.toString();
+      }
+    }
+  
+    setInterval(csu, 1000);
+  </script>
 </body>
 <style>
   .PAGE {
